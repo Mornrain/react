@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Country from './Country'
 
-const SearchFilter = ({ countries,persons }) => {
+const SearchFilter = ({ countries }) => {
   // 用来跟踪Filter Box 内输入的更改
   const [word, setWord] = useState('')
   // filterdisplay会基于search来显示更新的列表，默认是我们的name列表prop
@@ -30,7 +30,7 @@ const SearchFilter = ({ countries,persons }) => {
     // console.log(e);
     if(e !== "") {
       setWord(e)
-      console.log(word);
+
     }
   };
 

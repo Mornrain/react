@@ -2,11 +2,11 @@ import React from 'react'
 
 const Country = ({ i,country }) => {
 var arr = [];
-console.log(country.languages[0].iso639_1);
+// console.log(country.languages[0].iso639_1);
 for(var key in country.languages){
   arr.push(country.languages[key]);
 }
-console.log(arr);
+// console.log(arr);
 
   return (
   <li>
